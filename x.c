@@ -692,7 +692,7 @@ setsel(char *str, Time t)
 	if (XGetSelectionOwner(xw.dpy, XA_PRIMARY) != xw.win)
 		selclear();
 
-	xclipcopy();
+	clipcopy(NULL);
 }
 
 void
