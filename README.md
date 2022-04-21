@@ -6,3 +6,4 @@ patches:
 * delete key
 * scrollback (with pg up/down & mouse)
 * xresources 
+* newterm
