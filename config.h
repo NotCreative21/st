@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Terminus (TTF):pixelsize=12:antialiasing=true";
+static char *font = "Iosevka Light Extended Oblique:pixelsize=12:antialiasing=true";
 static int borderpx = 2;
 
 /*
@@ -27,7 +27,7 @@ char *vtiden = "\033[?6c";
 
 /* Kerning / character bounding-box multipliers */
 static float cwscale = 1.0;
-static float chscale = 0.95;
+static float chscale = 0.85;
 
 /*
  * word delimiter string
@@ -241,7 +241,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
-	{ TERMMOD,              XK_Return,      newterm,        {.i =  0} },
+	{(ControlMask|Mod1Mask), XK_Return,      newterm,        {.i =  0} },
 };
 
 /*
