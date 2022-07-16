@@ -1092,11 +1092,11 @@ newterm(const Arg* a)
 					break;
 				case 0:
 					res = chdir(getcwd_by_pid(pid));
-					//char * tabbed_win = getenv ("XEMBED");
-					//if (tabbed_win)
-					//execlp("st", "./st", "-w", tabbed_win, NULL);
-					//else
-					execlp("st", "./st", NULL);
+					char * tabbed_win = getenv ("XEMBED");
+					if (tabbed_win)
+						execlp("st", "./st", "-w", tabbed_win, NULL);
+					else
+						execlp("st", "./st", NULL);
 					break;
 				default:
 					exit(0);
