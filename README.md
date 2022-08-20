@@ -8,3 +8,4 @@ patches:
 * xresources 
 * newterm
 * alpha
+* font2

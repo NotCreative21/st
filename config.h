@@ -5,7 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrains Mono:pixelsize=12:antialiasing=true";
+static char *font = "ComicCodeLigatures Nerd Font:pixelsize=12:antialiasing=true:style=Regular";
+static char *font2 = "codicon:pixelsize=13:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
